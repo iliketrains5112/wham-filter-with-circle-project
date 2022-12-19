@@ -11,16 +11,18 @@ tint_color="";
 }
 
 function draw(){
-    image(video, 0, 0, 500, 500);
+    image(video, 200, 200, 150, 150);
     tint(tint_color);
     fill("red");
     circle(25, 25, 50, 50)
-    fill("red");
     circle(475, 475, 50, 50)
-    fill("red");
     circle(25, 475, 50, 50)
-    fill("red");
     circle(475, 25, 50, 50)
+    fill("green");
+    rect(50, 25, 400, 10);
+    rect(50, 475, 400, 10);
+    rect(25, 50, 10, 400);
+    rect(475, 50, 10, 400);
 }
 
 function take_snapshot(){
